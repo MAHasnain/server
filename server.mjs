@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 app.get("/name", (req, res) => {
  console.log("mahasnain");
- res.send("ma");
+ res.send("M.A.Hasnain");
 });
 
 
