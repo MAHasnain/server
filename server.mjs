@@ -11,6 +11,10 @@ app.get("/name", (req, res) => {
  res.send("M.A.Hasnain");
 });
 
+app.get("/name/:username", (req, res) => {
+ const username = req.params.username;
+ res.json({"massage": username});
+});
 
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`);
